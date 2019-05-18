@@ -10,6 +10,3 @@ chmod-socket = 660
 vacuum = true
 master = true
 max-requests = 1000
-
-max-requests = 100
-reload-on-rss = 128
