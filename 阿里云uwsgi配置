@@ -1,0 +1,15 @@
+[uwsgi]
+master = true
+processes = 1
+threads = 2
+chdir = /www/izone/
+wsgi-file=/www/izone/izone/wsgi.py
+http = 0.0.0.0:6666
+logto = /www/izone//logs/error.log
+chmod-socket = 660
+vacuum = true
+master = true
+max-requests = 1000
+
+max-requests = 100
+reload-on-rss = 128
