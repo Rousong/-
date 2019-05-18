@@ -1,0 +1,9 @@
+[program:vblue]
+directory= /home/www/Documents/demo
+command = /home/www/Documents/demo/venv/bin/uwsgi --ini /home/www/Documents/demo/uwsgi.ini
+autostart=true
+autorestart=true
+redirect_stderr = true
+stdout_logfile = /home/www/Documents/demo/logs/out.log
+stdout_logfile_maxbytes = 1MB
+stderr_logfile= /home/www/Documents/demo/logs/err.log
